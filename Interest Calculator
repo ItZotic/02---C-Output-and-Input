@@ -1,6 +1,18 @@
 using System;
 
-class MonesyConvert{
-  static void Main(){
-    Console.Write("Enter amount in USD: ");
-    double dollar = double.Parse(Console.ReadLine());
+class InterestCalculator{
+    static void Main(){
+        Console.Write("Enter principal amount: ");
+        double principal = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter rate of interest: ");
+        double rate = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter time in years: ");
+        double time = int.Parse(Console.ReadLine());
+
+        double simpleInterest = (principal * rate * time)/100;
+
+        Console.Write($"Simple Interest: {simpleInterest:F2}");
+    }
+}

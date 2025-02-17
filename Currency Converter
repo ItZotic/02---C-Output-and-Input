@@ -1,0 +1,17 @@
+using System;
+
+class MonesyConvert{
+  static void Main(){
+    Console.Write("Enter amount in USD: ");
+    double dollar = double.Parse(Console.ReadLine());
+
+    Console.Write("Enter exchange rate from USD to EUR: ");
+    double exchange = double.Parse(Console.ReadLine());
+
+    double euro = dollar * exchange;
+
+    Console.Write($"Enter amount in EUR: {euro:F2}");
+  }
+}
+    
+  
