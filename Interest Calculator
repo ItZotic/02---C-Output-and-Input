@@ -1,0 +1,6 @@
+using System;
+
+class MonesyConvert{
+  static void Main(){
+    Console.Write("Enter amount in USD: ");
+    double dollar = double.Parse(Console.ReadLine());
